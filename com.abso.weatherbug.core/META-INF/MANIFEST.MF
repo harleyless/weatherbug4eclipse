@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: WeatherBug Core Plug-in
+Bundle-SymbolicName: com.abso.weatherbug.core
+Bundle-Version: 1.0.0
+Bundle-Vendor: ABSo
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.4
+Bundle-ClassPath: lib/commons-codec.jar,
+ lib/commons-httpclient.jar,
+ lib/commons-lang.jar,
+ lib/commons-logging.jar,
+ lib/dom4j.jar,
+ lib/jaxen.jar,
+ .
+Export-Package: com.abso.weatherbug.core,
+ com.abso.weatherbug.core.data,
+ org.apache.commons.lang
