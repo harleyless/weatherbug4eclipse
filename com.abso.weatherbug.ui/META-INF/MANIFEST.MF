@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: WeatherBug UI Plug-in
+Bundle-SymbolicName: com.abso.weatherbug.ui;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: com.abso.weatherbug.ui.WeatherBugUIPlugin
+Bundle-Vendor: ABSo
+Bundle-Localization: plugin
+Require-Bundle: com.abso.weatherbug.core,
+ org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.eclipse.ui.forms
+Eclipse-LazyStart: true
+Bundle-RequiredExecutionEnvironment: J2SE-1.4
