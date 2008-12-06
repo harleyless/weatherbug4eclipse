@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.abso.weatherbug.ui.preferences.WeatherBugPreferencePage"
+            id="com.abso.weatherbug.ui.preferences.WeatherBugPreferencePage"
+            name="WeatherBug">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="false"
+            category="com.abso.weatherbug.ui.views.category"
+            class="com.abso.weatherbug.ui.views.LiveWeatherView"
+            icon="icons/full/cview16/weather_nav.png"
+            id="com.abso.weatherbug.ui.views.LiveWeatherView"
+            name="Live Weather">
+      </view>
+      <view
+            allowMultiple="false"
+            category="com.abso.weatherbug.ui.views.category"
+            class="com.abso.weatherbug.ui.views.ForecastView"
+            icon="icons/full/cview16/forecast_nav.png"
+            id="com.abso.weatherbug.ui.views.ForecastView"
+            name="Forecast">
+      </view>
+      <category
+            id="com.abso.weatherbug.ui.views.category"
+            name="WeatherBug">
+      </category>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="com.abso.weatherbug.ui.WeatherBugPerspectiveFactory"
+            icon="icons/full/ctool16/weatherbug.png"
+            id="com.abso.weatherbug.ui.WeatherBugPerspectiveFactory"
+            name="WeatherBug"/>
+   </extension>
+</plugin>
